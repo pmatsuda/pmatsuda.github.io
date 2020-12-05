@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+    <meta charset="UTF-8" name="viewport" content+"width=device-width, initial-scale=1.0">
+<head>
+<title>Contact</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.hmtl">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <form action="https://formspree.io/pat.matsuda@comcast.net" method="POST">
+        <div>
+            <label for="name">Name: </label>
+            <input id="name" type="text" name="name">
+            <br>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input id="email" type="text" name="_replyto">
+            <br>
+        </div>
+        <div>
+            <label for="phone">Phone: </label>
+            <input id="phone" type="text" name="phone">
+            <br>
+        </div>
+        <div>
+            <label for="message">Message: </label>
+            <textarea id="message" name="message"></textarea>
+            <br>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Send">
+        </div>
+        <input type="hidden" name="_next" value="//pmatsuda.github.io/thanks.html">
+    </form> 
+    <script>
+        var toggleMenu = document.getElementById('toggleMenu');
+        var nav = document.querySelector('nav');
+        toggleMenu.addEventListener(
+            'click',
+            function(){
+            if(nav.style.display=='block'){
+                nav.style.display='none';
+            }else{
+                nav.style.display='block';
+            }
+            }
+        );
+    </script>
+</body>
+</html>
