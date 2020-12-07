@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+     <link href="./dist/css/main.min.css" type="text/css" rel="stylesheet"> 
+    <meta charset="UTF-8" name="viewport" content+"width=device-width, initial-scale=1.0">
+<head>
+<title>Patricia Matsuda</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>I am Patricia Matsuda</h1>
+    <p>I am a systems analyst who loves to design and create applications.  I started in the mainframe environment and 
+        progressed to web development. In the past 7 years, I was a college instructor teaching programming using Java and 
+        general technology concepts.
+    </p>
+    <p>My hobbies include photography, sketching with charcoal, riding my bike and watching concerts.</p>
+    <script>
+        var toggleMenu = document.getElementById('toggleMenu');
+        var nav = document.querySelector('nav');
+        toggleMenu.addEventListener(
+            'click',
+            function(){
+            if(nav.style.display=='block'){
+                nav.style.display='none';
+            }else{
+                nav.style.display='block';
+            }
+            }
+        );
+    </script>
+</body>
+</html>
